@@ -15,3 +15,5 @@ files.filter(file => file !== 'awesome-interview' && !/^\./.test(file)).map(file
         recursive: true
     });
 });
+
+fs.writeFileSync(path.resolve(pwd, 'index.html'), '<script>location.pathname!=="/awesome-interview/"&&(location.pathname="/awesome-interview/")</script>')
